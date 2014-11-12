@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="https://github.com/javl/genderSwap" viewmodes="minimized" version="1.0">
+
+  <name>genderSwap</name>
+  <description>Replaces all words referencing to men, with their female equivalent and vice versa.</description>
+  <author>Jasper van Loenen</author>
+
+  <access origin="*"/>
+
+</widget>
