@@ -2,7 +2,7 @@
 
 GenderSwap is a browser plugin which replaces all words referencing to men with their female equivalent, and vice versa.
 
-Simply substituting one gender for another changes many news posts or articles into oddly distorted texts. For some reason, we are not surprised when we read about women being harrast while just walking around, but swap genders and things start sounding strange and stop making sense: "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
+Simply substituting one gender for another changes many news posts or articles into oddly distorted texts. For instance, we are not surprised when we read about women being harassed while just walking around, but swap genders and things start sounding strange and stop making sense: "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
 
 Notice: the replacement code used by this plugin is far from perfect, but I tried to catch at least the most occuring words.
 
@@ -21,3 +21,6 @@ The Safari, Firefox and Opera versions are based on the Cloud-to-Butt ports by [
 
 ## Note about Safari version
 It seems Apple tries to make it hard for non OSX developers to build extentions for Safari, so I didn't bother. Feel free to compile the code found in the Safari folder of this repository into a working plugin (please, send me a pull request if you do!).
+
+##Privacy
+The plugin asks permission to access every webpage you visit. This is to replace a set of keywords in the source code: no data about your internet usage is recorded or transmitted in any way.
