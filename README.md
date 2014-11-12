@@ -2,7 +2,9 @@
 
 GenderSwap is a browser plugin which replaces words referencing to men with their female equivalent, and vice versa.
 
-Simply substituting one gender for another changes many news posts or articles into oddly distorted texts. For instance, we are not surprised when we read about women being harassed while walking down the street, but swap genders and things start sounding strange and stop 'making sense': "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
+Simply substituting one gender for another changes many news posts and articles into oddly distorted texts. For instance, we are not surprised when we read about women being harassed while walking down the street, but swap genders and things start sounding strange and stop 'making sense': "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
+
+genderSwap helps to see situations we condider normal for what they really are.
 
 ##Downloads
 Use the following link to download the plugin:
