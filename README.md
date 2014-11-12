@@ -1,4 +1,4 @@
-# genderSwap
+# genderSwap ![](https://raw.githubusercontent.com/javl/genderSwap/master/icons/icon_48.png "")
 
 GenderSwap is a browser plugin which replaces all words referencing to men with their female equivalent, and vice versa.
 
