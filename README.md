@@ -1,26 +1,22 @@
-genderSwap
-==========
-GenderSwap is a browser plugin which replaces all words 
-referencing to men with their female equivalent, and
-vice versa (him -> her, mother -> father, etc.).
+# genderSwap
 
-By doing so, many articles you read online which you
-would normally 
+GenderSwap is a browser plugin which replaces all words referencing to men with their female equivalent, and vice versa (him -> her, mother -> father, etc.).
 
-Attribution:
-==========
-This plugin is a updated version of an old test I wrote. The code 
-in this version is based on the Cloud-to-Butt plugin:
+Simply substituting one gender for another changes many news posts or articles into oddly distorted texts. For some reason, we are not surprised when we read about women being harrast while just walking around, but swap genders and things start sounding strange and stop making sense: "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
 
-Chrome (original version): https://github.com/panicsteve/cloud-to-butt
-Safari: https://github.com/logancollins/cloud-to-butt-safari
-(see below for info on the Safari version of genderSwap)
-Firefox: https://github.com/DaveRandom/cloud-to-butt-mozilla
-Opera: https://github.com/DaveRandom/cloud-to-butt-opera
 
-Safari
-==========
-It seems Apple tries to make it hard for non OSX devs to build
-extentions for Safari, so I didn't bother. Feel free to compile
-the code found in the Safari folder of this repository into
-a working plugin (please, send me a pull request if you do!).
+##Downloads
+Use the following link to download the plugin:
+
+  * For [Chrome / Chromium](https://github.com/javl/genderSwap/blob/master/chrome/genderSwap.crx?raw=true)
+  * For [Firefox / Iceweasel](https://github.com/javl/genderSwap/blob/master/firefox/genderSwap.xpi?raw=true)
+  * For [Opera](https://github.com/javl/genderSwap/blob/master/opera/genderSwap.oex?raw=true)
+
+##Attribution:
+This plugin is an updated version of an old test version I wrote a long time ago. The code 
+in this new version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), which you can be found [here](https://github.com/panicsteve/cloud-to-butt).
+
+The Safari, Firefox and Opera versions are based on the Cloud-to-Butt ports by [Logan Collins](https://github.com/logancollins) ([Safari version](https://github.com/logancollins/cloud-to-butt-safari)) and [Chris Wright](https://github.com/DaveRandom) ([Firefox version](https://github.com/DaveRandom/cloud-to-butt-mozilla) / [Opera version](https://github.com/DaveRandom/cloud-to-butt-opera)).
+
+## Note about Safari version
+It seems Apple tries to make it hard for non OSX developers to build extentions for Safari, so I didn't bother. Feel free to compile the code found in the Safari folder of this repository into a working plugin (please, send me a pull request if you do!).
