@@ -4,7 +4,7 @@ GenderSwap is a browser plugin which replaces words referencing to men with thei
 
 Simply substituting one gender for another changes many news posts and articles into oddly distorted texts. For instance, we are not surprised when we read about women being harassed while walking down the street, but swap genders and things start sounding strange and stop 'making sense': "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
 
-genderSwap helps to see situations we consider normal for what they really are.
+genderSwap helps to see situations we consider normal from another angle.
 
 ##Downloads
 Use the following link to download the plugin:
@@ -24,5 +24,7 @@ The Safari, Firefox and Opera versions are based on the Cloud-to-Butt ports by [
 ## Note about Safari version
 It seems Apple tries to make it hard for non OSX developers to build extentions for Safari, so I didn't bother. Feel free to compile the code found in the Safari folder of this repository into a working plugin (please, send me a pull request if you do!).
 
-##Privacy
-The plugin asks permission to access every webpage you visit. This is to replace a set of keywords in the source code; no data whatsoever is recorded or transmitted in any way.
+##The plugin
+This plugin replaces certain keywords in the source of websites you visit. While this replacement is far from perfect, it works quite well most of the time.
+
+To be able to perform its search-and-replace magic the plugin needs access to the pages you visit: this is only for the replacement! No data whatsoever is recorded or transmitted in any way.
