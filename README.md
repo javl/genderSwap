@@ -4,7 +4,9 @@ GenderSwap is a browser extension which replaces words referring to men with the
 
 Simply substituting one gender for another changes many situations in news posts and articles to non-issues or irrelevant scenarios, showing how odd and gender biased the original story actually was.
 
-_Susan Patton, author of “Marry Smart,” urges men to put family before career, because timing, like any successful endeavor, is everything. “Gentlemen, work can wait, fertility won’t, so spend your 20s landing a wife, not climbing the corporate ladder,” he said._ [Kerima Greene, CNBC, 2014](http://www.cnbc.com/id/101817054)
+>_Susan Patton, author of “Marry Smart,” urges men to put family before career, because timing, like any successful endeavor, is everything. “Gentlemen, work can wait, fertility won’t, so spend your 20s landing a wife, not climbing the corporate ladder,” he said._
+
+Source: [Kerima Greene, CNBC, 2014](http://www.cnbc.com/id/101817054)
 
 genderSwap helps to view these situations we are used to from a different angle.
 
