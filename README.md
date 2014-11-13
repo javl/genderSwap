@@ -14,7 +14,7 @@ Use the following link to download the plugin:
   * For [Opera](https://github.com/javl/genderSwap/blob/master/opera/genderSwap.oex?raw=true)
 
 ##About
-This plugin is an updated version of a plugin I made while attending the [Piet Zwart Institute](http://pzwart3.wdka.hro.nl/). More of my work can be found on my website: [jaspervanloenen.com](http://jaspervanloenen.com).
+This plugin is an updated version of a plugin I made while attending the Piet Zwart Institute. More of my work can be found on my website: [jaspervanloenen.com](http://jaspervanloenen.com).
 
 ##Attribution:
 The code in this version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), available [here](https://github.com/panicsteve/cloud-to-butt).
