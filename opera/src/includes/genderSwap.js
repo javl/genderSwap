@@ -1,44 +1,71 @@
 (function() {
 
     var wordlist = [
-        ['\\bWoman\\b', 'Man', 'Man\\b', 'Woman'],
-        ['\\bwoman\\b', 'man', '\\bman\\b', 'woman'],
-        ['\\bWomen\\b', 'Men', 'Men\\b', 'Women'],
-        ['\\bwomen\\b', 'men', '\\bmen\\b', 'women'],
-        ['Girl\\b', 'Boy', 'Boy\\b', 'Girl'],
-        ['\\bgirl\\b', 'boy', '\\bboy\\b', 'girl'],
-        ['She\\b', 'He', 'He\\b', 'She'],
-        ['\\bshe\\b', 'he', '\\bhe\\b', 'she'],
-        ['Her\\b', 'His', 'His\\b', 'Her'],
-        ['\\bher\\b', 'his', '\\bhis\\b', 'her'],
-        ['\\bher!', 'him!', '\\bhis!', 'hers!'],
-        ['\\bher\\?', 'him?', '\\bhis\\?', 'hers?'],
-        ['\\bher,', 'him,', '\\bhis,', 'hers,'],
-        ['\\bher\\.', 'him.', '\\bhis\\.', 'hers.'],
-        ['\\bher:', 'him:', '\\bhis:', 'hers:'],
-        ['\\bhers\\b', 'his', 'His\\b', 'Her'],
-        ['\\b_AAA_\\b', '_AAA_', '\\bhim\\.', 'her'], // _AAA_ is just unused array filler
-        ['Female\\b', 'Male', 'Male\\b', 'Female'],
-        ['\\bfemale\\b', 'male', '\\bmale\\b', 'female'],
-        ['Wife\\b', 'Husband', 'Husband\\b', 'Wife'],
-        ['\\bwife\\b', 'husband', '\\bhusband\\b', 'wife'],
-        ['Mother\\b', 'Father', 'Father\\b', 'Mother'],
-        ['\\bmother\\b', 'father', '\\bfather\\b', 'mother'],
-        ['Daughter\\b', 'Son', 'Son\\b', 'Daughter'],
-        ['\\bdaughter\\b', 'son', '\\bson\\b', 'daughter'],
-        ['Girlfriend\\b', 'Boyfriend', '\\bBoyfriend\\b', 'Girlfriend'],
-        ['\\bgirlfriend\\b', 'boyfriend', '\\bboyfriend\\b', 'girlfriend'],
-        ['Lady\\b', 'Gentleman', 'Gentleman\\b', 'Lady'],
-        ['\\blady\\b', 'gentleman', '\\bgentleman\\b', 'lady'],
-        ['Madam\\b', 'Sir', '\\bSir\\b', 'Madam'],
-        ['\\bMadam\\b', 'Sir', '\\bSir\\b', 'Madam'],
-        ['Ms\\b', 'Mr', '\\bMr\\.', 'Ms'],
-        ['\\bms.\\b', 'mr.', '\\bmr\\.', 'ms'],
-        ['Miss\\b', 'Mister', '\\bMister\\b', 'Ms'],
-        ['\\bmiss\\b', 'mister', '\\bmister\\b', 'ms'],
-        ['Queen\\b', 'King', 'King\\b', 'Queen'],
-        ['\\bqueen\\b', 'king', '\\bking\\b', 'queen'],
+    
+        [/Her\b/g,                  /His(?!.*_x_)\b/g,              'His',              'Her'],
+        [/\bher\b/g,                /\bhim(?!.*_x_)\b/g,            'him',              'her'],
+        [/\bhers\b/g,               /\bhis(?!.*_x_)\b/g,            'his',              'her'],
+        [/\bher\b/g,                /\bhis\.(?!.*_x_)/g,            'his',              'hers.'],
+
+        [/\bher(\?|\!|\.|,|:|;)/g,  /\bhis\.(?!.*_x_)/g,            'him$1',            'hers.'],
+        [/\bshe\b/g,                /\bhe(?!.*_x_)\b/g,             'he',               'she'],
+        [/She\b/g,                  /He(?!.*_x_)/g,                 'He',               'She'],
+
+        [/\bherself\b/g,            /\bhimself(?!.*_x_)/g,          'himself',          'herself'],
+
+        [/Wom(a|e)n\b/g,            /M(a|e)n(?!.*_x_)/g,            'M$1n',             'Wom$1n'],
+        [/\bwom(a|e)n\b/g,          /\bm(a|e)n(?!.*_x_)\b/g,        'm$1n',             'wom$1n'],
+
+        [/Girl(s?)\b/g,             /Boy(s?)(?!.*_x_)/g,            'Boy$1',            'Girl$1'],
+        [/\bgirl(s?)\b/g,           /\bboy(s?)(?!.*_x_)\b/g,        'boy$1',            'girl$1'],
+
+        [/Female(s?)\b/g,           /Male(s?)(?!.*_x_)/g,           'Male$1',           'Female$1'],
+        [/\bfemale(s?)\b/g,         /\bmale(s?)(?!.*_x_)\b/g,       'male$1',           'female$1'],
+
+        [/Wife(s?)\b/g,             /Husband(s?)(?!.*_x_)/g,        'Husband$1',        'Wife$1'],
+        [/\bwife(s?)\b/g,           /\bhusband(s?)(?!.*_x_)\b/g,    'husband$1',        'wife$1'],
+
+        [/Mother(s?)\b/g,           /Father(s?)(?!.*_x_)/g,         'Father$1',         'Mother$1'],
+        [/\bmother(s?)\b/g,         /\bfather(s?)(?!.*_x_)\b/g,     'father$1',         'mother$1'],
+
+        [/Mom(s?)\b/g,              /Dad(s?)(?!.*_x_)/g,            'Dad$1',            'Mom$1'],
+        [/\bmom(s?)\b/g,            /\bdad(s?)(?!.*_x_)\b/g,        'dad$1',            'mom$1'],
+
+        [/Grandmother(s?)\b/g,      /Grandfather(s?)(?!.*_x_)/g,    'Grandfather$1',    'Grandmother$1'],
+        [/\bgrandmother(s?)\b/g,    /\bgrandfather(s?)(?!.*_x_)\b/g,'grandfather$1',    'grandmother$1'],
+
+        [/Sister(s?)\b/g,           /Brother(s?)(?!.*_x_)/g,        'Brother$1',        'Sister$1'],
+        [/\bsister(s?)\b/g,         /\bbrother(s?)(?!.*_x_)\b/g,    'brother$1',        'sister$1'],
+
+        [/Daughter(s?)\b/g,         /Son(s?)(?!.*_x_)/g,            'Son$1',            'Daughter$1'],
+        [/\bdaughter(s?)\b/g,       /\bson(s?)(?!.*_x_)\b/g,        'son$1',            'daughter$1'],
+
+        [/Niece(s?)\b/g,            /Nephew(s?)(?!.*_x_)/g,         'Nephew$1',         'Niece$1'],
+        [/\bniece(s?)\b/g,          /\bnephew(s?)(?!.*_x_)\b/g,     'nephew$1',         'niece$1'],
+
+        [/Aunt(s?)\b/g,             /Uncle(s?)(?!.*_x_)/g,          'Uncle$1',          'Aunt$1'],
+        [/\baunt(s?)\b/g,           /\buncle(s?)(?!.*_x_)\b/g,      'uncle$1',          'aunt$1'],
+
+        [/Girlfriend(s?)\b/g,       /Boyfriend(s?)(?!.*_x_)/g,      'Boyfriend$1',      'Girlfriend$1'],
+        [/\bgirlfriend(s?)\b/g,     /\bgirlfriend(s?)(?!.*_x_)\b/g, 'boyfriend$1',      'girlfriend$1'],
+
+        [/Lady(s?)\b/g,             /Gentleman(?!.*_x_)/g,          'Gentleman',        'Lady'],
+        [/\blady\b/g,               /\bgentleman(?!.*_x_)\b/g,      'gentleman',        'lady'],
+        [/Ladies\b/g,               /Gentlemen(?!.*_x_)/g,          'Gentlemen',        'Ladies'],
+        [/\bladies\b/g,             /\bgentlemen(?!.*_x_)\b/g,      'gentlemen',        'ladies'],
+
+        [/Miss\b/g,                 /Mister(?!.*_x_)/g,             'Mister',           'Miss'],
+        [/\bmiss\b/g,               /\bmister(?!.*_x_)/g,           'mister',           'miss'],
+        [/Ms\b/g,                   /Mr\.(?!.*_x_)/g,               'Mr.',              'Ms.'],
+        [/\bms\.+\b/g,              /\bmr\.(?!.*_x_)/g,             'mr.',              'ms'],
+        [/Mrs\.+\b/g,               '',                             'Mr.',              ''],
+        [/mrs\.+\b/g,               '',                             'mr.',              ''],
+
+        [/Queen(s?)\b/g,            /King(s?)(?!.*_x_)/g,           'King$1',           'Queen$1'],
+        [/\bqueen(s?)\b/g,          /\bking(s?)(?!.*_x_)\b/g,       'king$1',           'queen$1'],
+
     ];
+
 
     function walk(node) 
     {
@@ -73,15 +100,19 @@
         // index number of the word. This is done so replaced words
         // will not get changed back during the second for-loop
         for(var i=wordlist.length-1;i>=0;i--) {
-            v = v.replace(RegExp(wordlist[i][0],"g"), '_rep_'+i+'_');
+            if(wordlist[i][2] != ''){
+                v = v.replace(wordlist[i][0], wordlist[i][2]+'_x_');
+            }
         }
         // Replace all male words with their female counterparts
         for(var i=wordlist.length-1;i>=0;i--) {
-            v = v.replace(RegExp(wordlist[i][2],"g"), wordlist[i][3]);
+            if(wordlist[i][3] != ''){
+                v = v.replace(wordlist[i][1], wordlist[i][3]);
+            }
         }
         // Change all _rep_#_ to the corresponding male word
         for(var i=wordlist.length-1;i>=0;i--) {
-            v = v.replace(RegExp('_rep_'+i+'_',"g"), wordlist[i][1]);       
+            v = v.replace(/_x_/g,  '');
         }
         textNode.nodeValue = v;
     }
