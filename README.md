@@ -16,6 +16,8 @@ Use the following link to download the plugin:
 ##About
 This plugin is an updated version of a plugin I made while attending the Piet Zwart Institute. More of my work can be found on my website: [jaspervanloenen.com](http://jaspervanloenen.com).
 
+![](http://jaspervanloenen.com/uploads/genderSwap-500x566.png "")
+
 ##Attribution:
 The code in this version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), available [here](https://github.com/panicsteve/cloud-to-butt).
 
