@@ -20,12 +20,12 @@ This plugin is an updated version of a plugin I made while attending the Piet Zw
 
 ![](http://jaspervanloenen.com/uploads/genderSwap01-500x756.png "")
 
-##Attribution:
+##Attribution
 The code in this version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), available [here](https://github.com/panicsteve/cloud-to-butt).
 
 The Safari, Firefox and Opera versions are based on the Cloud-to-Butt ports by [Logan Collins](https://github.com/logancollins) ([Safari version](https://github.com/logancollins/cloud-to-butt-safari)) and [Chris Wright](https://github.com/DaveRandom) ([Firefox version](https://github.com/DaveRandom/cloud-to-butt-mozilla) / [Opera version](https://github.com/DaveRandom/cloud-to-butt-opera)).
 
-## Note about Safari version
+### Note about Safari version
 It seems Apple tries to make it hard for non OSX developers to build extentions for Safari, so I didn't bother. Feel free to compile the code found in the Safari folder of this repository into a working plugin (please, send me a pull request if you do!).
 
 ###Function
