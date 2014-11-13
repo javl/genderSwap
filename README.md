@@ -2,7 +2,9 @@
 
 GenderSwap is a browser plugin which replaces words referring to men with their female equivalent, and vice versa.
 
-Simply substituting one gender for another changes many news posts and articles into oddly distorted texts. For instance, we are not surprised when we read about women being harassed while walking down the street, but swap genders and things start sounding strange and stop 'making sense': "Whenever I bring up the topic of street harassment with women, they tell me they just don’t see it. Literally: When they’re walking down the street with a man, other women don’t make a noise." [[Amanda Hess, Slate.com, Oct 28 2014](http://www.slate.com/blogs/xx_factor/2014/10/28/street_harassment_video_a_hidden_camera_records_what_women_go_through_on.html)]
+Simply substituting one gender for another changes many news posts and articles into oddly distorted texts. 
+
+_Susan Patton, author of “Marry Smart,” urges men to put family before career, because timing, like any successful endeavor, is everything. “Gentlemen, work can wait, fertility won’t, so spend your 20s landing a wife, not climbing the corporate ladder,” he said._ [Kerima Greene, CNBC, 2014](http://www.cnbc.com/id/101817054)
 
 genderSwap helps to view these situations we are used to from another angle.
 
@@ -16,7 +18,7 @@ Use the following link to download the plugin:
 ##About
 This plugin is an updated version of a plugin I made while attending the Piet Zwart Institute. More of my work can be found on my website: [jaspervanloenen.com](http://jaspervanloenen.com).
 
-![](http://jaspervanloenen.com/uploads/genderSwap-500x566.png "")
+![](http://jaspervanloenen.com/uploads/genderSwap01-500x756.png "")
 
 ##Attribution:
 The code in this version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), available [here](https://github.com/panicsteve/cloud-to-butt).
