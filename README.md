@@ -24,7 +24,7 @@ The Safari, Firefox and Opera versions are based on the Cloud-to-Butt ports by [
 ## Note about Safari version
 It seems Apple tries to make it hard for non OSX developers to build extentions for Safari, so I didn't bother. Feel free to compile the code found in the Safari folder of this repository into a working plugin (please, send me a pull request if you do!).
 
-##The plugin
+###plugin
 This plugin replaces certain keywords in the source of websites you visit. While this replacement is far from perfect, it works quite well most of the time.
 
 To be able to perform its search-and-replace magic the plugin needs access to the pages you visit: this is only for the replacement! No data whatsoever is recorded or transmitted in any way.
