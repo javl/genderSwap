@@ -13,11 +13,11 @@ Use the following link to download the plugin:
   * For [Firefox / Iceweasel](https://github.com/javl/genderSwap/blob/master/firefox/genderSwap.xpi?raw=true)
   * For [Opera](https://github.com/javl/genderSwap/blob/master/opera/genderSwap.oex?raw=true)
 
-##Attribution:
-genderSwap was made by [Jasper van Loenen](http://jaspervanloenen.com).
+##About
+This plugin is an updated version of a plugin I made while attending the [Piet Zwart Institute](http://pzwart3.wdka.hro.nl/). More of my work can be found on my website: [jaspervanloenen.com](http://jaspervanloenen.com).
 
-The plugin is an updated version of an old test version I wrote a long time ago. The code 
-in this new version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), available [here](https://github.com/panicsteve/cloud-to-butt).
+##Attribution:
+The code in this version is based on the Cloud-to-Butt plugin by [Steven Frank](https://github.com/panicsteve), available [here](https://github.com/panicsteve/cloud-to-butt).
 
 The Safari, Firefox and Opera versions are based on the Cloud-to-Butt ports by [Logan Collins](https://github.com/logancollins) ([Safari version](https://github.com/logancollins/cloud-to-butt-safari)) and [Chris Wright](https://github.com/DaveRandom) ([Firefox version](https://github.com/DaveRandom/cloud-to-butt-mozilla) / [Opera version](https://github.com/DaveRandom/cloud-to-butt-opera)).
 
