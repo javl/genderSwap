@@ -14,6 +14,9 @@ var wordlist = [
 	[/Wom(a|e)n\b/g,			/M(a|e)n(?!.*_x_)/g,			'M$1n',				'Wom$1n'],
 	[/\bwom(a|e)n\b/g,			/\bm(a|e)n(?!.*_x_)\b/g,		'm$1n',				'wom$1n'],
 
+	[/Femininity\b/g,			/Masculinity(?!.*_x_)/g,		'Masculinity',		'Femininity'],
+	[/\bfemininity\b/g,			/\bmasculinity(?!.*_x_)\b/g,	'masculinity',		'femininity'],
+
 	[/Girl(s?)\b/g,				/Boy(s?)(?!.*_x_)/g,			'Boy$1',			'Girl$1'],
 	[/\bgirl(s?)\b/g,			/\bboy(s?)(?!.*_x_)\b/g,		'boy$1',			'girl$1'],
 
@@ -104,7 +107,7 @@ function handleText(textNode) {
 	// Replace all male words with their female counterparts
 	for(var i=wordlist.length-1;i>=0;i--) {
 		if(wordlist[i][3] != ''){
-			v = v.replace(wordlist[i][1], wordlist[i][3]);
+			v = v.replace(wordlist[i][1], wordlist[i][3]+"_CHANGED");
 		}
 	}
 	// Change all _rep_#_ to the corresponding male word
